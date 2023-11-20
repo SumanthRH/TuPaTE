@@ -32,6 +32,7 @@ logger = logging.getLogger(__name__)
 class GlueDataset():
     def __init__(self, tokenizer: AutoTokenizer, data_args, training_args) -> None:
         super().__init__()
+
         if data_args.dataset_name == 'snli':  # Standalone dataset
             raw_datasets = load_dataset('snli', 'plain_text')
         elif data_args.dataset_name == 'scitail':
@@ -92,7 +93,13 @@ class GlueDataset():
             if data_args.max_predict_samples is not None:
                 self.predict_dataset = self.predict_dataset.select(range(data_args.max_predict_samples))
 
-        self.metric = load_metric("glue", data_args.dataset_name)
+        if data_args.dataset_name == 'snli':  # Standalone dataset
+            self.metric = load_metric("glue", "mnli") # just accuracy
+        elif data_args.dataset_name == 'scitail':
+            self.metric = load_metric("glue", "mnli") # just accuracy
+        else:
+            self.metric = load_metric("glue", data_args.dataset_name)
+        # self.metric = load_metric("glue", data_args.dataset_name)
 
         if data_args.pad_to_max_length:
             self.data_collator = default_data_collator
