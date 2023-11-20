@@ -176,6 +176,12 @@ class ModelArguments:
     lora_r: int = field(
         default=None
     )
+    force_download: bool = field(
+        default=False,
+        metadata={
+            "help": "Whether to force (re)download of the weights"
+        }
+    )
 
 @dataclass
 class QuestionAnwseringArguments:

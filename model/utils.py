@@ -161,6 +161,7 @@ def get_model(model_args, task_type: TaskType, config: AutoConfig, fix_bert: boo
             model_args.model_name_or_path,
             config=config,
             revision=model_args.model_revision,
+            force_download=model_args.force_download,
         )
 
         bert_param = 0

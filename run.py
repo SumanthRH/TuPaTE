@@ -119,7 +119,6 @@ if __name__ == '__main__':
     set_seed(training_args.seed)
 
     trainer, predict_dataset = get_trainer(args)
-
     last_checkpoint = None
     if os.path.isdir(training_args.output_dir) and training_args.do_train and not training_args.overwrite_output_dir:
         last_checkpoint = get_last_checkpoint(training_args.output_dir)
