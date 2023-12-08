@@ -1,6 +1,6 @@
-dataset_names=("snli" "qqp" "mnli")
-task_names=("glue" "glue" "glue") 
-export CUDA_VISIBLE_DEVICES=2
+dataset_names=("qnli" "sst2" "scitail" "cola")
+task_names=("glue" "glue" "glue" "glue")
+export CUDA_VISIBLE_DEVICES=3
 
 if [ "${#dataset_names[@]}" -ne "${#task_names[@]}" ]; then
     echo "Arrays are of different lengths."

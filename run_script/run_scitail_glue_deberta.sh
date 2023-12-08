@@ -1,5 +1,5 @@
-dataset_names=("snli" "qqp" "mnli")
-task_names=("glue" "glue" "glue") 
+dataset_names=("scitail")
+task_names=("glue")
 export CUDA_VISIBLE_DEVICES=2
 
 if [ "${#dataset_names[@]}" -ne "${#task_names[@]}" ]; then
@@ -13,7 +13,6 @@ lr=1e-5
 dropout=0.1
 # psl=20
 epoch=10
-
 
 for i in "${!dataset_names[@]}"; do
   dataset=${dataset_names[$i]}
@@ -38,6 +37,7 @@ for i in "${!dataset_names[@]}"; do
     --save_strategy epoch \
     --evaluation_strategy epoch \
     --save_total_limit 1 \
+    --overwrite_cache \
     --load_best_model_at_end  | tee ${checkpoint_dir}/run.log 
   done
   # --prefix

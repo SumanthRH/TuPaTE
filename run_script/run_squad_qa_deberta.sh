@@ -1,17 +1,15 @@
-dataset_names=("snli" "qqp" "mnli")
-task_names=("glue" "glue" "glue") 
-export CUDA_VISIBLE_DEVICES=2
-
+dataset_names=("squad_v2")
+task_names=("qa")
+# export CUDA_VISIBLE_DEVICES=0
 if [ "${#dataset_names[@]}" -ne "${#task_names[@]}" ]; then
     echo "Arrays are of different lengths."
     exit 1
 fi
-
+export CUDA_VISIBLE_DEVICES=2
 
 bs=32
 lr=1e-5
 dropout=0.1
-# psl=20
 epoch=10
 
 
@@ -31,14 +29,16 @@ for i in "${!dataset_names[@]}"; do
     --per_device_train_batch_size $bs \
     --learning_rate $lr \
     --num_train_epochs $epoch \
-    --output_dir $checkpoint_dir \
+    --output_dir ${checkpoint_dir} \
     --overwrite_output_dir \
     --hidden_dropout_prob $dropout \
     --seed 11 \
     --save_strategy epoch \
     --evaluation_strategy epoch \
     --save_total_limit 1 \
-    --load_best_model_at_end  | tee ${checkpoint_dir}/run.log 
-  done
+     --load_best_model_at_end \
+    --metric_for_best_model "eval_f1" \
+    | tee ${checkpoint_dir}/run.log
   # --prefix
   # --pre_seq_len $psl \
+done

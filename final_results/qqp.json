@@ -1,0 +1,21 @@
+{
+  "target-qqp-interm-hotpotqa-1e-5-deberta": 0.9159287657679941,
+  "target-qqp-interm-sst2-1e-5-deberta": 0.9149146673262429,
+  "target-qqp-interm-drop-1e-5-deberta": 0.9159287657679941,
+  "target-qqp-interm-cq-1e-5-deberta": 0.9159287657679941,
+  "target-qqp-interm-scitail-1e-5-deberta": 0.9170912688597576,
+  "target-qqp-interm-newsqa-1e-5-deberta": 0.9159287657679941,
+  "target-qqp-interm-mnli-1e-5-deberta": 0.9154835518179569,
+  "target-qqp-interm-wnli-1e-5-deberta": 0.916423447934702,
+  "target-qqp-interm-snli-1e-5-deberta": 0.9150630719762552,
+  "target-qqp-interm-mrpc-1e-5-deberta": 0.9170418006430868,
+  "target-qqp-interm-comqa-1e-5-deberta": 0.9159287657679941,
+  "target-qqp-interm-qnli-1e-5-deberta": 0.9160029680930003,
+  "target-qqp-interm-boolq-1e-5-deberta": 0.9151125401929261,
+  "target-qqp-interm-squad_v2-1e-5-deberta": 0.9159287657679941,
+  "target-qqp-interm-wikihop-1e-5-deberta": 0.9159287657679941,
+  "target-qqp-interm-squad-1e-5-deberta": 0.9159287657679941,
+  "target-qqp-interm-duorcp-1e-5-deberta": 0.9159287657679941,
+  "target-qqp-interm-rte-1e-5-deberta": 0.9155330200346278,
+  "target-qqp-interm-duorcs-1e-5-deberta": 0.9159287657679941
+}

@@ -67,7 +67,10 @@ class SQuAD:
 
         self.data_collator = default_data_collator
 
-        self.metric = load_metric(data_args.dataset_name)
+        if data_args.dataset_name in ["squad", "squad_v2"]:
+            self.metric = load_metric(data_args.dataset_name)
+        else:
+            self.metric = load_metric("squad_v2") # just use squad
 
     def prepare_train_dataset(self, examples):
         examples['question'] = [q.lstrip() for q in examples['question']]

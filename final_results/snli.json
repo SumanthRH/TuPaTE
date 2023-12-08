@@ -1,0 +1,21 @@
+{
+  "target-snli-interm-mrpc-1e-5-deberta": 0.9065,
+  "target-snli-interm-comqa-1e-5-deberta": 0.9067,
+  "target-snli-interm-scitail-1e-5-deberta": 0.907,
+  "target-snli-interm-duorcp-1e-5-deberta": 0.9067,
+  "target-snli-interm-squad_v2-1e-5-deberta": 0.9067,
+  "target-snli-interm-newsqa-1e-5-deberta": 0.9067,
+  "target-snli-interm-qqp-1e-5-deberta": 0.9047,
+  "target-snli-interm-drop-1e-5-deberta": 0.9067,
+  "target-snli-interm-wnli-1e-5-deberta": 0.9048,
+  "target-snli-interm-hotpotqa-1e-5-deberta": 0.9067,
+  "target-snli-interm-squad-1e-5-deberta": 0.9067,
+  "target-snli-interm-cq-1e-5-deberta": 0.9067,
+  "target-snli-interm-mnli-1e-5-deberta": 0.909,
+  "target-snli-interm-duorcs-1e-5-deberta": 0.9067,
+  "target-snli-interm-boolq-1e-5-deberta": 0.9052,
+  "target-snli-interm-rte-1e-5-deberta": 0.9062,
+  "target-snli-interm-sst2-1e-5-deberta": 0.9062,
+  "target-snli-interm-qnli-1e-5-deberta": 0.9058,
+  "target-snli-interm-wikihop-1e-5-deberta": 0.9067
+}

@@ -44,7 +44,7 @@ class GlueDataset():
         #labels
         self.is_regression = data_args.dataset_name == "stsb"
         if not self.is_regression:
-            self.label_list = raw_datasets["train"].features["label"].names
+            self.label_list = raw_datasets["train"].features["label"].names if data_args.dataset_name != "scitail" else raw_datasets["train"].unique("label")
             self.num_labels = len(self.label_list)
         else:
             self.num_labels = 1
@@ -70,7 +70,6 @@ class GlueDataset():
                 f"model ({tokenizer.model_max_length}). Using max_seq_length={tokenizer.model_max_length}."
             )
         self.max_seq_length = min(data_args.max_seq_length, tokenizer.model_max_length)
-
         raw_datasets = raw_datasets.map(
             self.preprocess_function,
             batched=True,
@@ -106,14 +105,14 @@ class GlueDataset():
         elif training_args.fp16:
             self.data_collator = DataCollatorWithPadding(tokenizer, pad_to_multiple_of=8)
 
-
     def preprocess_function(self, examples):
         # Tokenize the texts
         args = (
             (examples[self.sentence1_key],) if self.sentence2_key is None else (examples[self.sentence1_key], examples[self.sentence2_key])
         )
         result = self.tokenizer(*args, padding=self.padding, max_length=self.max_seq_length, truncation=True)
-
+        if not self.is_regression and self.data_args.dataset_name == "scitail":
+            result["label"] = [self.label2id[label] for label in examples["label"]]
         return result
 
     def compute_metrics(self, p: EvalPrediction):

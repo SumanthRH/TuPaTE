@@ -43,16 +43,27 @@ def get_trainer(args):
         )
 
     model = get_model(model_args, TaskType.SEQUENCE_CLASSIFICATION, config)
-
-    # Initialize our Trainer
-    trainer = BaseTrainer(
-        model=model,
-        args=training_args,
-        train_dataset=dataset.train_dataset if training_args.do_train else None,
-        eval_dataset=dataset.eval_dataset if training_args.do_eval else None,
-        compute_metrics=dataset.compute_metrics,
-        tokenizer=tokenizer,
-        data_collator=dataset.data_collator,
-    )
+    if data_args.dataset_name == "cola":
+        # Initialize our Trainer
+        trainer = BaseTrainer(
+            model=model,
+            args=training_args,
+            train_dataset=dataset.train_dataset if training_args.do_train else None,
+            eval_dataset=dataset.eval_dataset if training_args.do_eval else None,
+            compute_metrics=dataset.compute_metrics,
+            tokenizer=tokenizer,
+            data_collator=dataset.data_collator,
+            test_key="matthews_correlation"
+        )
+    else:
+        trainer = BaseTrainer(
+            model=model,
+            args=training_args,
+            train_dataset=dataset.train_dataset if training_args.do_train else None,
+            eval_dataset=dataset.eval_dataset if training_args.do_eval else None,
+            compute_metrics=dataset.compute_metrics,
+            tokenizer=tokenizer,
+            data_collator=dataset.data_collator,
+        )
 
     return trainer, None

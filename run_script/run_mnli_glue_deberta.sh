@@ -12,7 +12,7 @@ bs=32
 lr=1e-5
 dropout=0.1
 # psl=20
-epoch=20
+epoch=10
 
 for i in "${!dataset_names[@]}"; do
   dataset=${dataset_names[$i]}
