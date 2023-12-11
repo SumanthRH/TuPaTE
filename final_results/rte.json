@@ -14,7 +14,6 @@
   "target-rte-interm-mnli-1e-5-deberta": 0.855595667870036,
   "target-rte-interm-cq-1e-5-deberta": 0.7075812274368231,
   "target-rte-interm-scitail-1e-5-deberta": 0.7220216606498195,
-  "target-rte-interm-wnli-deberta": 0.5270758122743683,
   "target-rte-interm-wikihop-1e-5-deberta": 0.7075812274368231,
   "target-rte-interm-sst2-1e-5-deberta": 0.8158844765342961,
   "target-rte-interm-boolq-1e-5-deberta": 0.8375451263537906,
