@@ -1,0 +1,23 @@
+{
+  "cq": "/data3/sumanthrh/checkpoints/cq-1e-5-deberta/checkpoint-2049",
+  "cola": "/data3/sumanthrh/checkpoints/cola-1e-5-deberta/checkpoint-536",
+  "qnli": "/data3/sumanthrh/checkpoints/qnli-1e-5-deberta/checkpoint-6548",
+  "duorcp": "/data3/sumanthrh/checkpoints/duorcp-1e-5-deberta/checkpoint-14006",
+  "mnli": "/data3/sumanthrh/checkpoints/mnli-1e-5-deberta/checkpoint-24544",
+  "scitail": "/data3/sumanthrh/checkpoints/scitail-1e-5-deberta/checkpoint-722",
+  "hotpotqa": "/data3/sumanthrh/checkpoints/hotpotqa-1e-5-deberta/checkpoint-16647",
+  "duorcs": "/data3/sumanthrh/checkpoints/duorcs-1e-5-deberta/checkpoint-6667",
+  "snli": "/data3/sumanthrh/checkpoints/snli-1e-5-deberta/checkpoint-34386",
+  "squad_v2": "/data3/sumanthrh/checkpoints/squad_v2-1e-5-deberta/checkpoint-4119",
+  "qqp": "/data3/sumanthrh/checkpoints/qqp-1e-5-deberta/checkpoint-22742",
+  "sst2": "/data3/sumanthrh/checkpoints/sst2-1e-5-deberta/checkpoint-2105",
+  "newsqa": "/data3/sumanthrh/checkpoints/newsqa-1e-5-deberta/checkpoint-80590",
+  "mrpc": "/data3/sumanthrh/checkpoints/mrpc-1e-5-deberta/checkpoint-345",
+  "comqa": "/data3/sumanthrh/checkpoints/comqa-1e-5-deberta/checkpoint-6600",
+  "drop": "/data3/sumanthrh/checkpoints/drop-1e-5-deberta/checkpoint-2972",
+  "boolq": "/data3/sumanthrh/checkpoints/boolq-1e-5-deberta/checkpoint-590",
+  "wnli": "/data3/sumanthrh/checkpoints/wnli-1e-5-deberta/checkpoint-120",
+  "rte": "/data3/sumanthrh/checkpoints/rte-1e-5-deberta/checkpoint-468",
+  "squad": "/data3/sumanthrh/checkpoints/squad-1e-5-deberta/checkpoint-27680",
+  "wikihop": "/data3/sumanthrh/checkpoints/wikihop-1e-5-deberta/checkpoint-8781"
+}
