@@ -1,6 +1,6 @@
 {
     "rte": {
-        "target-rte-interm-mrpc-1e-5-deberta": 0.7581227436823105,
+        "target-rte-interm-mrpc-1e-5-deberta": 0.7328519855595668,
         "target-rte-interm-hotpotqa-1e-5-deberta": 0.7075812274368231,
         "target-rte-interm-drop-1e-5-deberta": 0.7075812274368231,
         "target-rte-interm-duorcp-1e-5-deberta": 0.7075812274368231,
@@ -8,17 +8,18 @@
         "target-rte-interm-squad_v2-1e-5-deberta": 0.7075812274368231,
         "target-rte-interm-newsqa-1e-5-deberta": 0.7075812274368231,
         "target-rte-interm-duorcs-1e-5-deberta": 0.7075812274368231,
-        "target-rte-interm-qqp-1e-5-deberta": 0.6462093862815884,
-        "target-rte-interm-wnli-1e-5-deberta": 0.7220216606498195,
+        "target-rte-interm-qqp-1e-5-deberta": 0.7545126353790613,
+        "target-rte-interm-wnli-1e-5-deberta": 0.7545126353790613,
         "target-rte-interm-squad-1e-5-deberta": 0.7075812274368231,
-        "target-rte-interm-snli-1e-5-deberta": 0.8339350180505415,
-        "target-rte-interm-mnli-1e-5-deberta": 0.855595667870036,
+        "target-rte-interm-snli-1e-5-deberta": 0.855595667870036,
+        "target-rte-interm-mnli-1e-5-deberta": 0.8664259927797834,
         "target-rte-interm-cq-1e-5-deberta": 0.7075812274368231,
-        "target-rte-interm-scitail-1e-5-deberta": 0.7220216606498195,
+        "target-rte-interm-scitail-1e-5-deberta": 0.740072202166065,
         "target-rte-interm-wikihop-1e-5-deberta": 0.7075812274368231,
-        "target-rte-interm-sst2-1e-5-deberta": 0.8158844765342961,
-        "target-rte-interm-boolq-1e-5-deberta": 0.8375451263537906,
-        "target-rte-interm-qnli-1e-5-deberta": 0.779783393501805
+        "target-rte-interm-sst2-1e-5-deberta": 0.8267148014440433,
+        "target-rte-interm-boolq-1e-5-deberta": 0.8158844765342961,
+        "target-rte-interm-qnli-1e-5-deberta": 0.7545126353790613,
+        "target-rte-interm-cola-1e-5-deberta": 0.7906137184115524
     },
     "snli": {
         "target-snli-interm-mrpc-1e-5-deberta": 0.9065,
@@ -146,7 +147,28 @@
         "target-wnli-interm-wikihop-1e-5-deberta": 0.5633802816901409,
         "target-wnli-interm-newsqa-1e-5-deberta": 0.5633802816901409
     },
-    "cola": {},
+    "cola": {
+        "target-cola-interm-duorcs-1e-5-deberta": 0.6056612573992737,
+        "target-cola-interm-hotpotqa-1e-5-deberta": 0.6056612573992737,
+        "target-cola-interm-boolq-1e-5-deberta": 0.6007621359415751,
+        "target-cola-interm-squad_v2-1e-5-deberta": 0.6056612573992737,
+        "target-cola-interm-rte-1e-5-deberta": 0.60819133045274,
+        "target-cola-interm-drop-1e-5-deberta": 0.6056612573992737,
+        "target-cola-interm-squad-1e-5-deberta": 0.6056612573992737,
+        "target-cola-interm-qqp-1e-5-deberta": 0.5442570546927161,
+        "target-cola-interm-qnli-1e-5-deberta": 0.5932024506783026,
+        "target-cola-interm-wikihop-1e-5-deberta": 0.6056612573992737,
+        "target-cola-interm-duorcp-1e-5-deberta": 0.6056612573992737,
+        "target-cola-interm-snli-1e-5-deberta": 0.6131862438295606,
+        "target-cola-interm-wnli-1e-5-deberta": 0.6132520976952389,
+        "target-cola-interm-sst2-1e-5-deberta": 0.6211792102998565,
+        "target-cola-interm-mrpc-1e-5-deberta": 0.5957258748412207,
+        "target-cola-interm-scitail-1e-5-deberta": 0.572739655014278,
+        "target-cola-interm-newsqa-1e-5-deberta": 0.6056612573992737,
+        "target-cola-interm-mnli-1e-5-deberta": 0.608471587686489,
+        "target-cola-interm-comqa-1e-5-deberta": 0.6056612573992737,
+        "target-cola-interm-cq-1e-5-deberta": 0.6056612573992737
+    },
     "mrpc": {
         "target-mrpc-interm-hotpotqa-1e-5-deberta": 0.9044117647058824,
         "target-mrpc-interm-sst2-1e-5-deberta": 0.8921568627450981,
@@ -167,5 +189,26 @@
         "target-mrpc-interm-wikihop-1e-5-deberta": 0.9044117647058824,
         "target-mrpc-interm-duorcs-1e-5-deberta": 0.9044117647058824,
         "target-mrpc-interm-squad_v2-1e-5-deberta": 0.9044117647058824
+    },
+    "qqp": {
+        "target-qqp-interm-hotpotqa-1e-5-deberta": 0.9159287657679941,
+        "target-qqp-interm-sst2-1e-5-deberta": 0.9149146673262429,
+        "target-qqp-interm-drop-1e-5-deberta": 0.9159287657679941,
+        "target-qqp-interm-cq-1e-5-deberta": 0.9159287657679941,
+        "target-qqp-interm-scitail-1e-5-deberta": 0.9170912688597576,
+        "target-qqp-interm-newsqa-1e-5-deberta": 0.9159287657679941,
+        "target-qqp-interm-mnli-1e-5-deberta": 0.9154835518179569,
+        "target-qqp-interm-wnli-1e-5-deberta": 0.916423447934702,
+        "target-qqp-interm-snli-1e-5-deberta": 0.9150630719762552,
+        "target-qqp-interm-mrpc-1e-5-deberta": 0.9170418006430868,
+        "target-qqp-interm-comqa-1e-5-deberta": 0.9159287657679941,
+        "target-qqp-interm-qnli-1e-5-deberta": 0.9160029680930003,
+        "target-qqp-interm-boolq-1e-5-deberta": 0.9151125401929261,
+        "target-qqp-interm-squad_v2-1e-5-deberta": 0.9159287657679941,
+        "target-qqp-interm-wikihop-1e-5-deberta": 0.9159287657679941,
+        "target-qqp-interm-squad-1e-5-deberta": 0.9159287657679941,
+        "target-qqp-interm-duorcp-1e-5-deberta": 0.9159287657679941,
+        "target-qqp-interm-rte-1e-5-deberta": 0.9155330200346278,
+        "target-qqp-interm-duorcs-1e-5-deberta": 0.9159287657679941
     }
 }

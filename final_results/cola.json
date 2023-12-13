@@ -1,1 +1,22 @@
-{}
+{
+  "target-cola-interm-duorcs-1e-5-deberta": 0.6056612573992737,
+  "target-cola-interm-hotpotqa-1e-5-deberta": 0.6056612573992737,
+  "target-cola-interm-boolq-1e-5-deberta": 0.6007621359415751,
+  "target-cola-interm-squad_v2-1e-5-deberta": 0.6056612573992737,
+  "target-cola-interm-rte-1e-5-deberta": 0.60819133045274,
+  "target-cola-interm-drop-1e-5-deberta": 0.6056612573992737,
+  "target-cola-interm-squad-1e-5-deberta": 0.6056612573992737,
+  "target-cola-interm-qqp-1e-5-deberta": 0.5442570546927161,
+  "target-cola-interm-qnli-1e-5-deberta": 0.5932024506783026,
+  "target-cola-interm-wikihop-1e-5-deberta": 0.6056612573992737,
+  "target-cola-interm-duorcp-1e-5-deberta": 0.6056612573992737,
+  "target-cola-interm-snli-1e-5-deberta": 0.6131862438295606,
+  "target-cola-interm-wnli-1e-5-deberta": 0.6132520976952389,
+  "target-cola-interm-sst2-1e-5-deberta": 0.6211792102998565,
+  "target-cola-interm-mrpc-1e-5-deberta": 0.5957258748412207,
+  "target-cola-interm-scitail-1e-5-deberta": 0.572739655014278,
+  "target-cola-interm-newsqa-1e-5-deberta": 0.6056612573992737,
+  "target-cola-interm-mnli-1e-5-deberta": 0.608471587686489,
+  "target-cola-interm-comqa-1e-5-deberta": 0.6056612573992737,
+  "target-cola-interm-cq-1e-5-deberta": 0.6056612573992737
+}
